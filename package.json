@@ -1,0 +1,23 @@
+{
+  "name": "training_javascript_2021",
+  "version": "1.0.0",
+  "description": "![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duong-leit/Training_Javascript_2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duong-leit/Training_Javascript_2021/issues"
+  },
+  "homepage": "https://github.com/duong-leit/Training_Javascript_2021#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
