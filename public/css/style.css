@@ -1,2 +1,173 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace, sans-serif;
+  font-weight: 700; }
+
+section.page {
+  width: 1440px;
+  background-color: #c5e4e7;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 10%;
+  min-height: 100vh; }
+
+nav h2 {
+  width: 97px;
+  height: 60px;
+  text-align: justify;
+  letter-spacing: 0.5px; }
+
+.bill {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+  background-color: #f4fafa;
+  padding: 25px 10px;
+  border: inherit;
+  border-radius: 15px; }
+  .bill label {
+    font-size: 24px;
+    font-weight: 700;
+    color: #5e7a7d; }
+  .bill__compute {
+    width: 40%;
+    height: 100%; }
+    .bill__compute > form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      justify-content: space-around; }
+      .bill__compute > form .bill-total > section {
+        width: 80%;
+        position: relative;
+        height: 57px; }
+        .bill__compute > form .bill-total > section > span:first-child {
+          position: absolute;
+          left: 12px;
+          top: 20px; }
+        .bill__compute > form .bill-total > section input {
+          width: 100%;
+          padding-left: 5%;
+          text-align: end;
+          padding-right: 7px;
+          height: 100%;
+          border-radius: 5px;
+          border: inherit;
+          background-color: #c5e4e7;
+          color: #00494d;
+          font-size: 24px; }
+          .bill__compute > form .bill-total > section input::placeholder {
+            color: #00494d; }
+      .bill__compute > form .bill-tip .percent-tip {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 67px;
+        column-gap: 28px;
+        row-gap: 8px;
+        margin-bottom: 15px; }
+        .bill__compute > form .bill-tip .percent-tip__option {
+          height: 30px;
+          width: 100px; }
+          .bill__compute > form .bill-tip .percent-tip__option > button {
+            width: 100%;
+            height: 100%;
+            border: inherit;
+            border-radius: 8px;
+            background-color: #00494d;
+            color: #f4fafa;
+            color: #f4fafa; }
+          .bill__compute > form .bill-tip .percent-tip__option button.active {
+            background-color: #26c0ab;
+            color: #00494d; }
+          .bill__compute > form .bill-tip .percent-tip__option > input {
+            width: 100%;
+            height: 100%;
+            border: inherit;
+            border-radius: 8px;
+            color: #7f9c9f;
+            background-color: #c5e4e7;
+            text-align: center; }
+      .bill__compute > form .number-people > section {
+        width: 80%;
+        position: relative;
+        height: 57px; }
+        .bill__compute > form .number-people > section > span:first-child {
+          position: absolute;
+          left: 12px;
+          top: 20px; }
+        .bill__compute > form .number-people > section input {
+          width: 100%;
+          padding-left: 5%;
+          text-align: end;
+          padding-right: 7px;
+          height: 100%;
+          border-radius: 5px;
+          border: inherit;
+          background-color: #c5e4e7;
+          color: #00494d;
+          font-size: 24px; }
+          .bill__compute > form .number-people > section input::placeholder {
+            color: #00494d; }
+  .bill__result {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    border: inherit;
+    border-radius: 15px;
+    background-color: #00494d;
+    padding: 10px; }
+    .bill__result > section {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 10px; }
+      .bill__result > section label {
+        width: 30%; }
+        .bill__result > section label > span {
+          display: block; }
+          .bill__result > section label > span:first-child {
+            color: white; }
+          .bill__result > section label > span:last-child {
+            font-size: 18px;
+            color: #5e7a7d; }
+      .bill__result > section input {
+        width: 60%;
+        border: inherit;
+        border-radius: 5px;
+        height: 100%;
+        font-size: 24px;
+        text-align: right;
+        background-color: inherit;
+        color: #c5e4e7; }
+      .bill__result > section button {
+        width: 80%;
+        height: 100%;
+        border: inherit;
+        border-radius: 10px;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        background-color: #26c0ab;
+        color: #00494d;
+        margin: 0 auto; }
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }

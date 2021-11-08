@@ -1,17 +1,17 @@
-$mobile-size : 375px;
-$desktop : 1440px;
+$mobile-size: 375px;
+$desktop-size: 1440px;
 
 // Colors
 // primary
-$strong-cyan : hsl(172, 67%, 45%);
+$strong-cyan: hsl(172, 67%, 45%);
 
 // neutral
-$very-dark-cyan : hsl(183, 100%, 15%);
-$dark-grayish-cyan : hsl(186, 14%, 43%);
-$sec-dark-grayish-cyan : hsl(184, 14%, 56%);
-$light-grayish-cyan : hsl(185, 41%, 84%);
-$sec-light-grayish-cyan : hsl(189, 41%, 97%);
-$white : hsl(0, 0%, 100%);
+$very-dark-cyan: hsl(183, 100%, 15%);
+$dark-grayish-cyan: hsl(186, 14%, 43%);
+$sec-dark-grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$sec-light-grayish-cyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
 
 $font-size: 24px;
-$font-family: 'Space Mono', monospace;
+$font-family: "Space Mono", monospace, sans-serif;

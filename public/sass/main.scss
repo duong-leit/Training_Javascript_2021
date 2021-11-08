@@ -1,9 +1,6 @@
+@import "base/variables";
+@import "base/base";
 
-@import 'base/base';
-@import 'base/variables';
+@import "layout/layout";
 
-@import 'layout/layout';
-
-@import 'components/components';
-
-
+@import "components/components";
