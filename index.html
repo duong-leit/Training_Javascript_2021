@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./public/assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="./public/css/style.css">
   <title> Zodinet Training JavaScript | Tip calculator app</title>
 </head>
 
@@ -39,7 +39,7 @@
             <label for="">Select Tip %</label>
             <section class="percent-tip">
               <div class="percent-tip__option">
-                <button class="active">5%</button>
+                <button class="tip-option active">5%</button>
               </div>
               <div class="percent-tip__option">
                 <button class="">10%</button>
@@ -82,14 +82,14 @@
             <span>Tip Amount</span>
             <span>/ person</span>
           </label>
-          <input type="text" value="0.00" readonly>
+          <input type="text" id="tipAmount" value="0.00" readonly>
         </section>
         <section>
           <label for="">
             <span>Total</span>
             <span>/ person</span>
           </label>
-          <input type=" text" value="0.00" step="any" readonly>
+          <input type=" text" id="totalPerson" value="0.00" step="any" readonly>
         </section>
         <section>
           <button>RESET</button>
