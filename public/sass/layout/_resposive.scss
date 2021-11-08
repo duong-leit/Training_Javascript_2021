@@ -1,0 +1,43 @@
+@media only screen and (max-width: 376px) {
+  section.page {
+    width: $mobile-size;
+    padding: 0;
+  }
+  nav {
+    margin: 30px;
+  }
+  .bill {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    &__compute {
+      width: 100%;
+      min-height: 400px;
+      .bill-total {
+        &--detail {
+          width: 100%;
+        }
+        input {
+          width: 100%;
+        }
+      }
+      .bill-tip {
+        section {
+          column-gap: 20px;
+          width: 100%;
+          justify-content: center;
+          margin-top: 10px;
+        }
+      }
+      .number-people {
+        section {
+          width: 100%;
+        }
+      }
+    }
+    &__result {
+      width: 100%;
+    }
+  }
+}
