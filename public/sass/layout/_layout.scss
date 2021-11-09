@@ -14,7 +14,7 @@ nav {
     width: 97px;
     height: 60px;
     text-align: justify;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.2px;
   }
 }
 .bill {
@@ -24,7 +24,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 60vh;
-  background-color: $sec-light-grayish-cyan;
+  background-color: $white;
   padding: 35px;
   border: inherit;
   border-radius: 15px;
@@ -62,7 +62,7 @@ nav {
             height: 100%;
             border-radius: 5px;
             border: inherit;
-            background-color: $light-grayish-cyan;
+            background-color: $sec-light-grayish-cyan;
             color: $very-dark-cyan;
             font-size: 24px;
             &::placeholder {
@@ -139,7 +139,7 @@ nav {
             height: 100%;
             border-radius: 5px;
             border: inherit;
-            background-color: $light-grayish-cyan;
+            background-color: $sec-light-grayish-cyan;
             color: $very-dark-cyan;
             font-size: 24px;
             &::placeholder {
