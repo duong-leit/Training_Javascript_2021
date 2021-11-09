@@ -29,7 +29,7 @@ nav {
   border: inherit;
   border-radius: 15px;
   label {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     color: $dark-grayish-cyan;
   }
@@ -44,7 +44,7 @@ nav {
       justify-content: space-around;
       .bill-total {
         > section {
-          width: 80%;
+          width: 90%;
           position: relative;
           height: 57px;
           > span {
@@ -54,8 +54,11 @@ nav {
               top: 20px;
             }
           }
+          svg {
+          }
           input {
             width: 100%;
+            padding-right: 15px;
             padding-left: 5%;
             text-align: end;
             padding-right: 7px;
@@ -121,7 +124,7 @@ nav {
           }
         }
         > section {
-          width: 80%;
+          width: 90%;
           position: relative;
           height: 57px;
           > span {
@@ -133,6 +136,7 @@ nav {
           }
           input {
             width: 100%;
+            padding-right: 15px;
             padding-left: 5%;
             text-align: end;
             padding-right: 7px;
@@ -177,7 +181,7 @@ nav {
             color: $white;
           }
           &:last-child {
-            font-size: 12px;
+            font-size: 14px;
             color: $dark-grayish-cyan;
           }
         }
@@ -200,9 +204,15 @@ nav {
         font-size: 24px;
         font-weight: 700;
         text-align: center;
-        background-color: $strong-cyan;
-        color: $very-dark-cyan;
         margin: 0 auto;
+        &:first-child {
+          background-color: $dark-grayish-cyan;
+          color: $white;
+        }
+        &:last-child {
+          background-color: $strong-cyan;
+          color: $very-dark-cyan;
+        }
       }
     }
   }
@@ -213,4 +223,7 @@ input[type="number"] {
     -webkit-appearance: none;
     margin: 0;
   }
+}
+button:hover {
+  opacity: 0.8;
 }

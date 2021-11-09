@@ -14,25 +14,35 @@
     &__compute {
       width: 100%;
       min-height: 400px;
-      .bill-total {
-        &--detail {
-          width: 100%;
+      form {
+        .bill-total {
+          &--detail {
+            width: 100%;
+          }
+          > section {
+            width: 100%;
+            input {
+              width: 100%;
+            }
+          }
         }
-        input {
-          width: 100%;
+        .bill-tip {
+          min-height: 150px;
+          section {
+            column-gap: 20px;
+            width: 100%;
+            justify-content: center;
+            margin: 10px auto 0;
+          }
+          .percent-tip__option {
+            height: 40px;
+            width: 120px;
+          }
         }
-      }
-      .bill-tip {
-        section {
-          column-gap: 20px;
-          width: 100%;
-          justify-content: center;
-          margin-top: 10px;
-        }
-      }
-      .number-people {
-        section {
-          width: 100%;
+        .number-people {
+          section {
+            width: 100%;
+          }
         }
       }
     }

@@ -34,7 +34,7 @@ nav h2 {
   border: inherit;
   border-radius: 15px; }
   .bill label {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     color: #5e7a7d; }
   .bill__compute {
@@ -47,7 +47,7 @@ nav h2 {
       height: 100%;
       justify-content: space-around; }
       .bill__compute > form .bill-total > section {
-        width: 80%;
+        width: 90%;
         position: relative;
         height: 57px; }
         .bill__compute > form .bill-total > section > span:first-child {
@@ -56,6 +56,7 @@ nav h2 {
           top: 20px; }
         .bill__compute > form .bill-total > section input {
           width: 100%;
+          padding-right: 15px;
           padding-left: 5%;
           text-align: end;
           padding-right: 7px;
@@ -105,7 +106,7 @@ nav h2 {
         color: red;
         font-size: 14px; }
       .bill__compute > form .number-people > section {
-        width: 80%;
+        width: 90%;
         position: relative;
         height: 57px; }
         .bill__compute > form .number-people > section > span:first-child {
@@ -114,6 +115,7 @@ nav h2 {
           top: 20px; }
         .bill__compute > form .number-people > section input {
           width: 100%;
+          padding-right: 15px;
           padding-left: 5%;
           text-align: end;
           padding-right: 7px;
@@ -151,7 +153,7 @@ nav h2 {
           .bill__result > section label > span:first-child {
             color: white; }
           .bill__result > section label > span:last-child {
-            font-size: 12px;
+            font-size: 14px;
             color: #5e7a7d; }
       .bill__result > section input {
         width: 60%;
@@ -170,13 +172,20 @@ nav h2 {
         font-size: 24px;
         font-weight: 700;
         text-align: center;
-        background-color: #26c0ab;
-        color: #00494d;
         margin: 0 auto; }
+        .bill__result > section button:first-child {
+          background-color: #5e7a7d;
+          color: white; }
+        .bill__result > section button:last-child {
+          background-color: #26c0ab;
+          color: #00494d; }
 
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
+
+button:hover {
+  opacity: 0.8; }
 
 @media only screen and (max-width: 376px) {
   section.page {
@@ -192,16 +201,23 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     .bill__compute {
       width: 100%;
       min-height: 400px; }
-      .bill__compute .bill-total--detail {
+      .bill__compute form .bill-total--detail {
         width: 100%; }
-      .bill__compute .bill-total input {
+      .bill__compute form .bill-total > section {
         width: 100%; }
-      .bill__compute .bill-tip section {
-        column-gap: 20px;
-        width: 100%;
-        justify-content: center;
-        margin-top: 10px; }
-      .bill__compute .number-people section {
+        .bill__compute form .bill-total > section input {
+          width: 100%; }
+      .bill__compute form .bill-tip {
+        min-height: 150px; }
+        .bill__compute form .bill-tip section {
+          column-gap: 20px;
+          width: 100%;
+          justify-content: center;
+          margin: 10px auto 0; }
+        .bill__compute form .bill-tip .percent-tip__option {
+          height: 40px;
+          width: 120px; }
+      .bill__compute form .number-people section {
         width: 100%; }
     .bill__result {
       width: 100%; } }
